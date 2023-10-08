@@ -26,7 +26,11 @@ export default function Carousal() {
               src="https://source.unsplash.com/random/900x700/?burger&pizza"
               className="d-block w-100"
               alt="..."
-              style={{ filter: "brightness(30%)" }}
+              style={{
+                filter: "brightness(30%)",
+                maxHeight: "300px",
+                objectFit: "cover",
+              }}
             />
           </div>
           <div className="carousel-item">
@@ -34,7 +38,11 @@ export default function Carousal() {
               src="https://source.unsplash.com/random/900x700/?cake"
               className="d-block w-100"
               alt="..."
-              style={{ filter: "brightness(30%)" }}
+              style={{
+                filter: "brightness(30%)",
+                maxHeight: "300px",
+                objectFit: "cover",
+              }}
             />
           </div>
           <div className="carousel-item">
@@ -42,7 +50,11 @@ export default function Carousal() {
               src="https://source.unsplash.com/random/900x700/?ravioli"
               className="d-block w-100"
               alt="..."
-              style={{ filter: "brightness(30%)" }}
+              style={{
+                filter: "brightness(30%)",
+                maxHeight: "300px",
+                objectFit: "cover",
+              }}
             />
           </div>
         </div>

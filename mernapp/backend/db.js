@@ -11,7 +11,15 @@ const mongoDB = async () => {
       .find({})
       .toArray()
       .then((data) => {
-        console.log();
+        const foodCategory = mongoose.connection.db.collection("foodCategory");
+        foodCategory
+          .find({})
+          .toArray()
+          .then((catData) => {
+            global.food_items = data;
+            global.foodCategory = catData;
+            // console.log(global.food_items);
+          });
       });
   } catch (err) {
     console.log(err);

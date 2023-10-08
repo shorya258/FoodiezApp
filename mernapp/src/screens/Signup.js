@@ -32,7 +32,8 @@ export default function Signup() {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
   return (
-    <div className="container">
+    <div className="sign up">
+      <h2>login</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
@@ -95,7 +96,7 @@ export default function Signup() {
         <button type="submit" className="m-3 btn btn-primary">
           Submit
         </button>
-        <Link to="/login" className="m-3 btn btn-danger">
+        <Link to="/loginuser" className="m-3 btn btn-danger">
           Already a user?
         </Link>
       </form>
